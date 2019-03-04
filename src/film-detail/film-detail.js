@@ -20,5 +20,6 @@ fetch(URL + filmId)
         loadFilmDetails(film);
     })
     .catch(err => {
+        /* eslint-disable-next-line */
         console.error('fetch error:', err);
     });
