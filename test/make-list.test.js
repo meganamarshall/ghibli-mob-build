@@ -1,4 +1,4 @@
-import { makeListOfFilms } from '../src/film-list-component.js';
+import { makeListOfFilms } from '../src/film-list/film-list-component.js';
 const test = QUnit.test;
 
 test('make list of films', assert => {

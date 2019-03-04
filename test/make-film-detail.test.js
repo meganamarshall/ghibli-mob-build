@@ -1,4 +1,4 @@
-import { makeFilmTemplate } from '../src/film-detail-component.js';
+import { makeFilmTemplate } from '../src/film-detail/film-detail-component.js';
 const test = QUnit.test;
 
 const film = {
