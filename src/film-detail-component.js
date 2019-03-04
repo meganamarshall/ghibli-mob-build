@@ -1,7 +1,7 @@
-export default function makeFilmTemplate(film) {
+export function makeFilmTemplate(film) {
     const html = /*html*/
     `
-    <dl id="film-detail">
+    <dl>
             <dt>Title:</dt>
             <dd>${film.title}</dd>
             <dt>Released:</dt>
@@ -19,4 +19,11 @@ export default function makeFilmTemplate(film) {
     const template = document.createElement('template');
     template.innerHTML = html;
     return template.content;
+}
+
+const filmDetails = document.getElementById('film-details');
+
+export default function loadFilmDetails(film) {
+    const dom = makeFilmTemplate(film);
+    filmDetails.appendChild(dom);
 }
